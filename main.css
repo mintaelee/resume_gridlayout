@@ -130,19 +130,23 @@ p {
 
 @media screen and (min-width: 1000px){
     #main_container{
-        grid-template-columns: 300px minmax(700px, 1200px);
+        grid-template-columns: 300px minmax(700px, 900px);
     }
     #project_tab{
         grid-template-columns: repeat(2, 350px);
-        grid-template-rows: repeat(2, 450px);
-        place-content: center;
-        place-items: center;
+        grid-template-rows: auto;
         width: 100%;
     }
 }
 
 @media screen and (min-width: 1200px){
     #main_container{
-        grid-template-columns: 300px minmax(1200px, 8000px);
+        grid-template-columns: 300px minmax(900px, 8000px);
+    }
+
+    #project_tab{
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: auto;
+        width: 100%;
     }
 }
