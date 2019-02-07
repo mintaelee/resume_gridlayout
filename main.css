@@ -86,24 +86,18 @@ body{
 }
 
 #resume_tab{
-    grid-template-columns: 280px;
-    grid-template-rows: auto;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 #lorem_tab{
-    grid-template-columns: 280px;
-    grid-template-rows: auto;
     justify-content: center;
     width: 100%;
     height: 100%;
 }
 
 #ipsum_tab{
-    grid-template-columns: 280px;
-    grid-template-rows: auto;
     justify-content: center;
     width: 100%;
     height: 100%;
@@ -127,24 +121,7 @@ p {
     #main_container{
         grid-template-columns: 300px minmax(400px,700px);
     }
-
-    #resume_tab{
-        grid-template-columns: minmax(280px, 580px);
-    }
-
-    #project_tab{
-        grid-template-columns: minmax(280px, 580px);
-    }
-
-    #lorem_tab{
-        grid-template-columns: minmax(280px, 580px);
-    }
-
-    #ipsum_tab{
-        grid-template-columns: minmax(280px, 580px);
-    }
     
-
     #content_container{
         height: 95vh;
         overflow: hidden scroll;
@@ -153,7 +130,7 @@ p {
 
 @media screen and (min-width: 1000px){
     #main_container{
-        grid-template-columns: 300px 80%;
+        grid-template-columns: 300px minmax(700px, 1200px);
     }
     #project_tab{
         grid-template-columns: repeat(2, 350px);
@@ -162,8 +139,10 @@ p {
         place-items: center;
         width: 100%;
     }
+}
 
-    #content_container{
-        width: auto;
+@media screen and (min-width: 1200px){
+    #main_container{
+        grid-template-columns: 300px minmax(1200px, 8000px);
     }
 }
