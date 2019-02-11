@@ -67,12 +67,9 @@ body{
     height: auto;
 }
 
-#default_tab{
-    display: none;
-    background-color: none;
-}
-
 #home_tab{
+    display: grid;
+    justify-content: center;
     width: 100%;
     height: 100%;
 }
